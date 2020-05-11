@@ -19,6 +19,7 @@
 ![create azure devops pipeline](./images/ReviewPipeline.jpg)
 
 ## Steps to create an Azure access token
+In the User Settings, there is a Personal Access Tokens option:
 ![create azure access token](./images/azureUserSettings.jpg)
 
 ![create azure access token](./images/PersonalAccessToken.jpg)
@@ -42,14 +43,18 @@ Assign that resource to each environment of the application.
 
 Repeat that last step for all the other environments.
 
-
 ## Steps to create the VSM Json file on the VM
 
-Open gedit editor in Applications -> Accessories -> gedit
+You can either create the VSM Json file on the VM using gedit, or download the json file stored in github using a browser running on the VM.
+
+The json file can be found here : [AzureWorkbook.json](https://github.com/VialeMuriel/ucvelocity-demo-france/blob/master/materials/AzureWorkbook.json "UCVelocity Demo France")
+
+To create the Json file on the VM, open gedit editor in Applications -> Accessories -> gedit
 
 ![create JSON](./images/createJson-1.jpg)
 
-Go to the web page containing the source code, and select the content of the json file:
+Go back to the azure Workbook web page, and select the content of the json file.
+
 ![create JSON](./images/createJson-2.jpg)
 
 Go back to the VM and paste the content into the clipboard of the emulator:

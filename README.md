@@ -2,8 +2,8 @@
 
 * [Steps to create a simple Azure DevOps pipeline](#steps-to-create-a-simple-azure-devOps-pipeline)
 * [How to create an Azure access token](#how-to-create-an-azure-access-token)
-* [Steps to configure resources in UrbanCode deploy](#toto)
-* [Steps to create the VSM Json file on the VM](#toto)
+* [Steps to configure resources in UrbanCode deploy](#steps-to-configure-resources-in-urbancode-deploy)
+* [Steps to create the VSM Json file on the VM](#steps-to-create-the-vsm-json-file-on-the-vm)
 
 ## Steps to create a simple Azure DevOps pipeline
 

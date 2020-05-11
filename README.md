@@ -21,7 +21,7 @@
 ## Steps to create an Azure access token
 ![create azure access token](./images/azureUserSettings.jpg)
 
-![create azure access token](./images/personalAccessToken.jpg)
+![create azure access token](./images/PersonalAccessToken.jpg)
 
 ## Steps to configure resources in UrbanCode deploy
 

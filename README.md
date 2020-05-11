@@ -1,7 +1,7 @@
 # ucvelocity-demo-france
 
 * [Steps to create a simple Azure DevOps pipeline](#steps-to-create-a-simple-azure-devOps-pipeline)
-* [How to create an Azure access token](#toto)
+* [How to create an Azure access token](#how-to-create-an-azure-access-token)
 * [Steps to configure resources in UrbanCode deploy](#toto)
 * [Steps to create the VSM Json file on the VM](#toto)
 

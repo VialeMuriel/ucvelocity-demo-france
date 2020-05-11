@@ -1,0 +1,104 @@
+{
+  "_id": "5e702311e1819863a523107a",
+  "pipelineId": "83225f55-d456-4de1-af65-636eeb7916a9",
+  "tenantId": "5ade13625558f2c6688d15ce",
+  "description": null,
+  "query": null,
+  "phases": [
+    {
+      "name": "Planning",
+      "description": null,
+      "stages": [
+        {
+          "name": "Backlog-Demonstration",
+          "query": "issue.status='New'",
+          "description": null,
+          "wipLimit": null,
+          "gates": null
+        }
+      ]
+    },
+    {
+      "name": "Development",
+      "description": null,
+      "stages": [
+        {
+          "name": "In Progress",
+          "query": "(issue.status=\"Active\" and pr.status!=\"active\" and pr.status!=\"completed\")",
+          "description": null,
+          "wipLimit": null,
+          "gates": null
+        },
+        {
+          "name": "In Review",
+          "query": "pr.status=active and issue.status!=\"Closed\"",
+          "description": null,
+          "wipLimit": null,
+          "gates": null
+        }
+      ]
+    },
+    {
+      "name": "Build",
+      "description": null,
+      "stages": [
+        {
+          "name": "Merged",
+          "query": "pr.status = 'completed' and deployment.env != 'DEV' and deployment.env != 'QA' and deployment.env != 'PROD'",
+          "description": null,
+          "wipLimit": null,
+          "gates": null
+        }
+      ]
+    },
+    {
+      "name": "Deploy",
+      "description": null,
+      "stages": [
+        {
+          "name": "DEV",
+          "query": "deployment.env = 'DEV' and deployment.env != 'QA' and deployment.env != 'PROD' and pr.status = 'completed'",
+          "description": null,
+          "wipLimit": null,
+          "gates": null
+        },
+        {
+          "name": "QA",
+          "query": "deployment.env = 'QA' and deployment.env != 'PROD' and pr.status = 'completed'",
+          "description": null,
+          "wipLimit": null,
+          "gates": null
+        },
+        {
+          "name": "PROD",
+          "query": "deployment.env = 'PROD' and pr.status = 'completed'",
+          "description": null,
+          "wipLimit": null,
+          "gates": null
+        }
+      ]
+    }
+  ],
+  "leadTime": null,
+  "cycleTime": null,
+  "mappings": null,
+  "integrations": [
+    {
+      "name": "AzureWorkbook"
+    },
+    {
+      "name": "dummyIntegration"
+    }
+  ],
+  "linkRules": [
+    {
+      "fromIntegrationName": "AzureWorkbook",
+      "toIntegrationName": "AzureWorkbook",
+      "fromField": "pr.name",
+      "toField": "issue.id",
+      "pattern": "([0-9]+)"
+    }
+  ],
+  "metrics": null,
+  "metricsBar": null
+}

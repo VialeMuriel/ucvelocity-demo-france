@@ -1,7 +1,8 @@
-# ucvelocity-demo-france
+# ucvelocity-POT-France
 
+* [Creating an Azure and UrbanCode Deploy (UCD) Value Stream](https://urbancode.github.io/velocity-info/workbooks/azureUcdValueStreams.html#11-create-workbook-project)
 * [Steps to create a simple Azure DevOps pipeline](#steps-to-create-a-simple-azure-devOps-pipeline)
-* [How to create an Azure access token](#how-to-create-an-azure-access-token)
+* [Steps to create an Azure access token](#steps-to-create-an-azure-access-token)
 * [Steps to configure resources in UrbanCode deploy](#steps-to-configure-resources-in-urbancode-deploy)
 * [Steps to create the VSM Json file on the VM](#steps-to-create-the-vsm-json-file-on-the-vm)
 
@@ -17,7 +18,7 @@
 
 ![create azure devops pipeline](./images/ReviewPipeline.jpg)
 
-## How to create an Azure access token
+## Steps to create an Azure access token
 ![create azure access token](./images/azureUserSettings.jpg)
 
 ![create azure access token](./images/personalAccessToken.jpg)

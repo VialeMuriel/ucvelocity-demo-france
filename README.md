@@ -72,3 +72,29 @@ Save the document as AzureWorkbook.json, in the sysadmin Documents folder :
 ![create JSON](./images/createJson-6.jpg)
 
 The Json file can now be uploaded in the Velocity VSM, using the upload button.
+
+## Basic Velocity administration
+Stop Velocity:
+```
+$ cd /opt/velocity/<version>"
+$ sudo docker-compose stop
+```
+Start Velocity:
+```
+$ cd /opt/velocity/<version>
+sudo docker-compose up -d
+```
+
+List container process:
+```
+$ docker ps
+```
+Get the log of a specifi container:
+```
+$ docker logs <container> > output.log
+```
+Containers:
+- velocity_continuous-release-ui
+- velocity_reporting-consumer
+- velocity_release-events-ui
+- release-events-api

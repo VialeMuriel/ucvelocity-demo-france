@@ -5,7 +5,8 @@
 * [Steps to create an Azure access token](#steps-to-create-an-azure-access-token)
 * [Steps to configure resources in UrbanCode deploy](#steps-to-configure-resources-in-urbancode-deploy)
 * [Steps to create the VSM Json file on the VM](#steps-to-create-the-vsm-json-file-on-the-vm)
-* [Images for the lab](#images_for_the_lab)
+* [Basic Velocity administration](#basic-Velocity-administration)
+* [Images for the lab](#images-for-the-lab)
 
 ## Steps to create a simple Azure DevOps pipeline
 

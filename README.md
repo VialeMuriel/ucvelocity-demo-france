@@ -98,3 +98,14 @@ Containers:
 - velocity_reporting-consumer
 - velocity_release-events-ui
 - release-events-api
+
+## Images for the lab
+ http://conf.bluedemos.com/app/home/session/4537/gcgcc1fjm98MWFE7Z251a8inbesarq41jxwz3qup5xtj1wt2vsh49CZJKCY3EJ7z
+
+Registered users:
+- hbelkhiria@adlere.fr
+- jcllobet@adlere.fr
+- jvoyat@adlere.fr
+- pstilhart@adlere.fr
+- vvbui@adlere.fr
+- wgravier@adlere.fr

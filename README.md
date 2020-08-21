@@ -84,7 +84,7 @@ $ sudo docker-compose stop
 Start Velocity:
 ```
 $ cd /opt/velocity/<version>
-sudo docker-compose up -d
+$ sudo docker-compose up -d
 ```
 
 List container process:

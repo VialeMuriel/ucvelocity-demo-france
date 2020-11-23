@@ -6,7 +6,7 @@
 * [Steps to configure resources in UrbanCode deploy](#steps-to-configure-resources-in-urbancode-deploy)
 * [Steps to create the VSM Json file on the VM](#steps-to-create-the-vsm-json-file-on-the-vm)
 * [Basic Velocity administration](#basic-Velocity-administration)
-* [Images for the lab](#images-for-the-lab)
+* [IBM Rational Azure DevOps Extension](#IBM-Rational-Azure-DevOps)
 
 ## Steps to create a simple Azure DevOps pipeline
 
@@ -101,13 +101,17 @@ Containers:
 - velocity_release-events-ui
 - release-events-api
 
-## Images for the lab
- http://conf.bluedemos.com/app/home/session/4537/gcgcc1fjm98MWFE7Z251a8inbesarq41jxwz3qup5xtj1wt2vsh49CZJKCY3EJ7z
+## IBM Rational Azure DevOps Extension
 
-Registered users:
-- hbelkhiria@adlere.fr Hazem
-- jcllobet@adlere.fr Jean-Christian
-- jvoyat@adlere.fr Julien
-- pstilhart@adlere.fr Paul
-- vvbui@adlere.fr Vien
-- wgravier@adlere.fr William
+We can integrate IBM Rational Test Automation Server with Azure DevOps so that we can run tests in Azure DevOps pipelines. The entire procedure is documented [here](https://help.blueproddoc.com/rationaltest/rationaltestautomationserver/10.1/com.hcl.test.server.tester.doc/topics/t_run_tests_azurdvops_pipeline.html)
+
+The IBM RTAS Server for the demo : [IBM RTAS server](https://rtas.apps.myrtascluster-e638aca3e25c28b781014ca81b1b35b2-0000.eu-de.containers.appdomain.cloud/#/project/1100/execute/execution)
+![visualstudio](./images/visualstudio-2.jpg)
+
+First we need to install the IBM Rational Test Workbench extension in Azure DevOps from the [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=IBMDevOps.build-release-task-IBM)
+![visualstudio](./images/visualstudio-1.jpg)
+
+Then we need to create an azure pipeline and include a task to run a test in our Azure DevOps pipeline. ![visualstudio](./images/visualstudio-3.jpg)
+
+At the first time, we need to create a new server connection and provide the following details to add an IBM Rational Test Automation Server service connection, and then save the connection details:
+![visualstudio](./images/visualstudio-4.jpg)
